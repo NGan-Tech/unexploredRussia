@@ -1,0 +1,91 @@
+/* шапочка */
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px auto;
+    padding: 0px 20px;
+    margin-bottom: 80px;
+    background: #F4F8F7;
+    height: 5.25em;
+    color: black;
+}
+
+#header a{
+    font-size: 16px;
+}
+
+/* список пунктов */
+.turLink {
+    margin-right: 30px;
+}
+
+.turLink:last-child {
+    margin-right: 0px;
+}
+/* ////\\\\ */
+
+/* это для всех элементов */
+.headerElement {
+    display: inline-block;
+}
+
+/* это для поиска, вся сворована */
+.serchFormBlock::after {
+    content: "";
+    clear: both;
+    display: table
+}
+
+.serchFormBlock .form {
+    width: auto;
+    float: right;
+    margin-right: 30px;
+    position: relative;
+}
+
+.serchFormBlock input {
+    width: 250px;
+    height: 26px;
+    padding-left: 15px;
+    border-radius: 8px;
+    border: 1px solid #324b4e;
+    outline: none;
+    position: relative;
+    /* transition: .3s linear; */ /*пока в коменты*/
+}
+
+.serchFormBlock button {
+    width: 42px;
+    height: 26px;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/* при фокусировке увеличивается. Пока закоменчу, 
+но фишка прикольная */
+/* .serchFormBlock input:focus {
+    width: 350px;
+} */
+/* \\\\\\/////\/\\/\//\\//\\\/ */
+
+/* язык и телефон */
+.LangBlock{
+    margin-right: 20px;
+}
+
+.PhoneBlock{
+    margin-right: 20px;
+}
+
+.PhoneBlock img{
+   float: left;
+   margin-right: 10px;
+}
+.PhoneBlock p{
+    float: right;  
+    font-family:'Open Sans' ;  
+}
